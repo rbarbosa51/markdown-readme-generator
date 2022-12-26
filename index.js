@@ -2,9 +2,10 @@
 import inquirer from "inquirer";
 //This provides out-of-the-box ansi escape sequences
 import ansi from 'ansi-escape-sequences';
+// Include Template.js
+import {createReadmeTemplate} from './template.js';
 
 // TODO: Create an array of questions for user input
-//`${ansi.styles(['red','bold'])} Test ${ansi.style.reset} Test
 const questions = [
     `What is the ${ansi.styles(['red','bold'])}TITLE${ansi.style.reset} of this project ?`,
     `Enter a ${ansi.styles(['red','bold'])}DESCRIPTION${ansi.style.reset} of this project: `,
@@ -64,7 +65,11 @@ function init() {
         },
     ])
     .then( (answers) => {
-        console.log(`Debug--`, answers);
+        let template = createReadmeTemplate(answers);
+        console.log('You wrote: \n' , template);
+    })
+    .catch( (e) => {
+        console.log(`Error: ${e}`);
     });
 }
 
