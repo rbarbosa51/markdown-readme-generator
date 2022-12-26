@@ -4,6 +4,7 @@ import inquirer from "inquirer";
 import ansi from 'ansi-escape-sequences';
 // Include Template.js
 import {createReadmeTemplate} from './template.js';
+// Write files
 import fs from 'fs';
 
 // TODO: Create an array of questions for user input
