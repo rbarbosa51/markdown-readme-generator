@@ -20,8 +20,6 @@ const questions = [
 
 ];
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
 function init() {
@@ -77,5 +75,5 @@ function init() {
     });
 }
 
-// Function call to initialize app
+// Start the app
 init();
