@@ -23,6 +23,10 @@ const questions = [
 
 // TODO: Create a function to initialize app
 function init() {
+    /*Clear the screen (console) and start at the top
+    erase.display deletes the console contents, 
+    cursor.position sets the cursor to the top left */
+    console.log(`${ansi.erase.display(2)} ${ansi.cursor.position()}`)
     inquirer.prompt([
         {
             name: 'title',
@@ -65,10 +69,10 @@ function init() {
     ])
     .then( (answers) => {
         let template = createReadmeTemplate(answers);
-        console.log('You wrote: \n' , template);
-        fs.writeFile('README.md',template, err => {
+        fs.writeFile('dist/README.md',template, err => {
             console.error(err);
         });
+        console.log('README file created: See dist/README.md file');
     })
     .catch( (e) => {
         console.log(`Error: ${e}`);
