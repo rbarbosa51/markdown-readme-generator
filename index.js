@@ -43,7 +43,7 @@ function init() {
             message: questions[3]
         },
         {
-            name: 'contribution',
+            name: 'contributing',
             message: questions[4]
         },
         {
