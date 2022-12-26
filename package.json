@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/rbarbosa51/markdown-readme-generator#readme",
   "dependencies": {
+    "ansi-escape-sequences": "^6.2.1",
     "inquirer": "^9.1.4"
   }
 }

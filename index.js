@@ -1,17 +1,20 @@
 //I am using modules (added "type":"modules" to package.json)
 import inquirer from "inquirer";
+//This provides out-of-the-box ansi escape sequences
+import ansi from 'ansi-escape-sequences';
 
 // TODO: Create an array of questions for user input
+//`${ansi.styles(['red','bold'])} Test ${ansi.style.reset} Test
 const questions = [
-    'What is the TITLE of this project ?',
-    'Enter a DESCRIPTION of this project: ',
-    'Enter INSTALLATION instructions: ',
-    'Enter USAGE Instructions: ',
-    'Enter CONTRIBUTION GUIDELINES: ',
-    'Enter TEST instructions (N/A if not applicable)',
-    'Choose a LICENSE for the application',
-    'Enter your GitHub username: ',
-    'Enter your email address'
+    `What is the ${ansi.styles(['red','bold'])}TITLE${ansi.style.reset} of this project ?`,
+    `Enter a ${ansi.styles(['red','bold'])}DESCRIPTION${ansi.style.reset} of this project: `,
+    `Enter ${ansi.styles(['red','bold'])}INSTALLATION${ansi.style.reset} instructions: `,
+    `Enter ${ansi.styles(['red','bold'])}USAGE${ansi.style.reset} Instructions: `,
+    `Enter ${ansi.styles(['red','bold'])}CONTRIBUTION GUIDELINES${ansi.style.reset}: `,
+    `Enter ${ansi.styles(['red','bold'])}TEST${ansi.style.reset} instructions (N/A if not applicable)`,
+    `Choose a ${ansi.styles(['red','bold'])}LICENSE${ansi.style.reset} for the application`,
+    `Enter your ${ansi.styles(['red','bold'])}GitHub Username${ansi.style.reset}: `,
+    `Enter your ${ansi.styles(['red','bold'])}Email${ansi.style.reset} address`
 
 ];
 
