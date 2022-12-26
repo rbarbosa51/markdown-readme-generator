@@ -1,0 +1,19 @@
+{
+  "name": "markdown-readme-generator",
+  "version": "1.0.0",
+  "description": "The purpose of this application is to assist in the creation of professional (markdown based) README.md files for any given repository",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rbarbosa51/markdown-readme-generator.git"
+  },
+  "author": "Rafael Barbosa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rbarbosa51/markdown-readme-generator/issues"
+  },
+  "homepage": "https://github.com/rbarbosa51/markdown-readme-generator#readme"
+}
