@@ -8,7 +8,7 @@ const questions = [
     'Enter INSTALLATION instructions: ',
     'Enter USAGE Instructions: ',
     'Enter CONTRIBUTION GUIDELINES: ',
-    'Enter TEST instructions',
+    'Enter TEST instructions (N/A if not applicable)',
     'Choose a LICENSE for the application',
     'Enter your GitHub username: ',
     'Enter your email address'
@@ -28,7 +28,35 @@ function init() {
         {
             name: 'description',
             message: questions[1]
-        }
+        },
+        {
+            name: 'installation',
+            message: questions[2]
+        },
+        {
+            name: 'usage',
+            message: questions[3]
+        },
+        {
+            name: 'contribution',
+            message: questions[4]
+        },
+        {
+            name: 'test',
+            message: questions[5]
+        },
+        {
+            name: 'license',
+            message: questions[6]
+        },
+        {
+            name: 'username',
+            message: questions[7]
+        },
+        {
+            name: 'email',
+            message: questions[8]
+        },
     ])
     .then( (answers) => {
         console.log(`Debug--`, answers);
