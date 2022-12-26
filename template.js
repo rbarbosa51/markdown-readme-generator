@@ -1,6 +1,10 @@
 const createReadmeTemplate = (answers) => {
-    
-    return answers; 
+    let template = `# ${answers.title}
+
+## ${answers.description}
+
+`
+    return template; 
 }
 
 export {createReadmeTemplate}
