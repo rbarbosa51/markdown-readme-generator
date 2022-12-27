@@ -20,5 +20,8 @@
   "dependencies": {
     "ansi-escape-sequences": "^6.2.1",
     "inquirer": "^9.1.4"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.1"
   }
 }
